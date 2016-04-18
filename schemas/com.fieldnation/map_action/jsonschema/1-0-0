@@ -1,0 +1,24 @@
+{
+	"$schema": "http://iglucentral.com/schemas/com.snowplowanalytics.self-desc/schema/jsonschema/1-0-0#",
+	"description": "Scheme for map-related events",
+	"self": {
+		"vendor": "com.fieldnation",
+		"name": "map_action",
+		"format": "jsonschema",
+		"version": "1-0-0"
+	},
+	
+	"type": "object",
+	"properties": {
+		"mapId": {
+			"type": "string",
+			"maxLength": 255
+		},
+		"action": {
+			"enum": ["markerClick", "zoomChange", "pan", "hide", "show", "expand", "shrink"]
+		}
+	},
+	"required": ["mapId", "action"],
+	"additionalProperties": false
+}
+
