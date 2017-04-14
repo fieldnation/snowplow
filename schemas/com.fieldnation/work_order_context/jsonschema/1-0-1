@@ -1,0 +1,17 @@
+{
+	"$schema": "http://iglucentral.com/schemas/com.snowplowanalytics.self-desc/schema/jsonschema/1-0-1#",
+	"description": "Field Nation work order context schema.",
+	"self": {
+		"vendor": "com.fieldnation",
+		"name": "work_order_context",
+		"format": "jsonschema",
+		"version": "1-0-1"
+	},
+	"type": "object",
+	"properties": {
+		"workOrderId": {
+			"type": "string"
+		}
+	},
+	"additionalProperties": false
+}
