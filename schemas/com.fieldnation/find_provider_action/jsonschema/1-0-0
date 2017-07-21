@@ -1,0 +1,41 @@
+{
+	"$schema": "http://iglucentral.com/schemas/com.snowplowanalytics.self-desc/schema/jsonschema/1-0-0#",
+	"description": "Schema for tracking what options availble when doing an action within find provider",
+	"self": {
+		"vendor": "com.fieldnation",
+		"name": "find_provider_action",
+		"format": "jsonschema",
+		"version": "1-0-0"
+	},
+	
+	"type": "object",
+	"properties": {
+        "provider_list": {
+            "type": "string"
+        },
+        "provider_id": {
+            "type": "number"
+        },
+        "provider_position": {
+            "type": "number"
+        },
+        "providers": {
+            "type": "array",
+            "items": {
+                "type": "number"
+            }
+        },
+        "view": {
+            "enum": ["list", "map"]
+        },
+        "current_page": {
+            "type": "number"
+        },
+        "providers_per_page": {
+            "type": "number"
+        }
+	},
+	"required": ["provider_list", "provider_id", "provider_postition", "providers", "view", "current_page", "providers_per_page"],
+	"additionalProperties": true
+}
+
