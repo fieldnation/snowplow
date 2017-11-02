@@ -1,0 +1,81 @@
+{
+	"$schema": "http://iglucentral.com/schemas/com.snowplowanalytics.self-desc/schema/jsonschema/1-0-1#",
+	"description": "Schema for tracking what options available when doing an action within find provider",
+	"self": {
+		"vendor": "com.fieldnation",
+		"name": "find_provider_action",
+		"format": "jsonschema",
+		"version": "1-0-1"
+	},
+	
+	"type": "object",
+	"properties": {
+	    "action": {
+	        "type": "string"
+	    },
+        "provider_list": {
+            "type": "string"
+        },
+        "provider_id": {
+            "type": "number"
+        },
+        "provider_position": {
+            "type": "number"
+        },
+        "providers": {
+            "type": "array",
+            "items": {
+                "type": "number"
+            }
+        },
+        "view": {
+            "enum": ["list", "map"]
+        },
+        "current_page": {
+            "type": "number"
+        },
+        "providers_per_page": {
+            "type": "number"
+        },
+        "confidence_score": {
+            "type": "number"
+        },
+        "selection_rule_actual_score": {
+            "type": "number"
+        },
+        "selection_rule_max_score": {
+            "type": "number"
+        },
+        "selection_rule_criteria_met": {
+            "type": "boolean"
+        },
+        "selection_rule_name": {
+            "type": "string"
+        },
+        "sort_order": {
+            "enum": ["asc", "desc"]
+        },
+        "sort_column": {
+            "type": "string"
+        }
+	},
+	"required": [
+	    "action",
+	    "provider_list",
+	    "provider_id",
+	    "provider_position",
+	    "providers",
+	    "view",
+	    "current_page",
+	    "providers_per_page",
+	    "confidence_score",
+	    "selection_rule_actual_score",
+	    "selection_rule_max_score",
+	    "selection_rule_criteria_met",
+	    "selection_rule_name",
+	    "sort_order",
+	    "sort_column"
+	],
+	"additionalProperties": false
+}
+
