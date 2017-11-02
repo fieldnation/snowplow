@@ -1,0 +1,28 @@
+{
+  "$schema": "http://iglucentral.com/schemas/com.snowplowanalytics.self-desc/schema/jsonschema/1-0-0#",
+  "description": "Field Nation stack context schema. A mechanism to track procedures on the stack.",
+  "self": {
+    "vendor": "com.fieldnation",
+    "name": "file_context",
+    "format": "jsonschema",
+    "version": "1-0-0"
+  },
+  "type": "object",
+  "properties": {
+    "class": {
+      "type": "string"
+    },
+    "method": {
+      "type": "string"
+    },
+    "line": {
+      "type": "integer"
+    },
+    "trace": {
+      "type": "string"
+    }
+  },
+  "required": ["class", "method", "line"],
+  "additionalProperties": false
+}
+
