@@ -1,0 +1,31 @@
+{
+  "$schema": "http://iglucentral.com/schemas/com.snowplowanalytics.self-desc/schema/jsonschema/1-0-0#",
+  "description": "Field Nation tracing context schema. Track some traces.",
+  "self": {
+    "vendor": "com.fieldnation",
+    "name": "tracing_context",
+    "format": "jsonschema",
+    "version": "1-0-1"
+  },
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "uuid": {
+      "type": "string"
+    },
+    "parent_uuid": {
+      "type": "string"
+    },
+    "order": {
+        "type": "number"
+    },
+    "timestamp": {
+        "type": "number"
+    }
+  },
+  "required": ["uuid", "order", "timestamp"],
+  "additionalProperties": false
+}
+
