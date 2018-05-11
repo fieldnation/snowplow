@@ -9,13 +9,20 @@
 	},
 	"type": "object",
 	"properties": {
-		"experimentName": {
+		"id": {
+			"type": "number"
+		},
+		"name": {
 			"type": "string"
 		}, 
-		"variant": {
+		"value": {
 			"type": "string"
-		}		
+		}
 	},
-	"additionalProperties": false
+	"additionalProperties": false,
+	"required": [
+		"id",
+		"name"
+	]
 }
 
