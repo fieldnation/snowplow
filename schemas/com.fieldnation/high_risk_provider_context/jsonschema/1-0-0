@@ -14,9 +14,6 @@
 	    "feature": {
             "type": "string"
         },
-        "list": {
-            "type": "string"
-        },
         "providers": {
             "type": "object",
             "properties": {
