@@ -8,33 +8,32 @@
 		"format": "jsonschema",
 		"version": "1-0-0"
 	},
-
 	"type": "object",
 	"properties": {
         "feature": {
-            "type": "string"
+          "type": "string"
         },
         "providers": {
-            "type": "object",
-            "properties": {
-                "id": {
-                    "type": "number"
-                },
-                "scoring": {
-                    "type": "number"
-                },
-            }
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "number"
+            },
+            "scoring": {
+              "type": "number"
+            },
+          }
         },
         "work_orders": {
-            "type": "object",
-            "properties": {
-                "id": {
-                    "type": "number"
-                },
-                "company_id": {
-                    "type": "number"
-                },
-            }
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "number"
+            },
+            "company_id": {
+              "type": "number"
+            },
+          }
         },
 	},
 	"additionalProperties": false
