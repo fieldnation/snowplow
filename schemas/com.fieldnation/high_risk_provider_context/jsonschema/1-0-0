@@ -35,6 +35,9 @@
             },
           }
         },
+        "company_id": {
+            "type": "number"
+        },
 	},
 	"additionalProperties": false
 }
