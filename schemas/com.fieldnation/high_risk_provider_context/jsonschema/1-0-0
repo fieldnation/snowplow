@@ -9,6 +9,9 @@
     },
     "type": "object",
     "properties": {
+        "list": {
+            "type": "string"
+        },
         "feature": {
             "type": "string"
         },
