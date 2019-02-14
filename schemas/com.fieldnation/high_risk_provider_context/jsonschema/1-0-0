@@ -20,10 +20,10 @@
             "items": {
                 "type": "object",
                 "properties": {
-                    "id": {
+                    "provider_id": {
                         "type": "number"
                     },
-                    "scoring": {
+                    "confidence_score": {
                         "type": "number"
                     }
                 }
